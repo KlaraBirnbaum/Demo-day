@@ -5,25 +5,25 @@ $font-color-dark: #373737;
 // FONTS
 @font-face {
     font-family: 'Metrolopis Medium';
-    src: url('./fonts/metrolopis.medium.eot') format('eot'),
-         url('./fonts/metrolopis.medium.woff') format('woff'),
-         url('./fonts/metrolopis.medium') format('truetype'),
-        url('./fonts/metrolopis.medium.woff2') format('woff2'),
-        url('./fonts/metrolopis.medium.woff') format('woff'),
+    src: url('../fonts/metrolopis.medium.eot') format('eot'),
+         url('../fonts/metrolopis.medium.woff') format('woff'),
+         url('../fonts/metrolopis.medium') format('truetype'),
+        url('../fonts/metrolopis.medium.woff2') format('woff2'),
+        url('../fonts/metrolopis.medium.woff') format('woff'),
 }
 
 @font-face {
     font-family: 'Metropolis Bold';
-    src: url('./fonts/metrolopis.bold.eot') format('eot'),
-         url('./fonts/metrolopis.bold.woff') format('woff'),
-         url('./fonts/metrolopis.bold.woff2') format('woff2');
+    src: url('../fonts/metrolopis.bold.eot') format('eot'),
+         url('../fonts/metrolopis.bold.woff') format('woff'),
+         url('../fonts/metrolopis.bold.woff2') format('woff2');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Metrolopis';
-    src: url('./fonts/metrolopis.regular') format('eot'),
-        url('./fonts/metrolopis.regular.woff') format('woff');
+    src: url('../fonts/metrolopis.regular') format('eot'),
+        url('../fonts/metrolopis.regular.woff') format('woff');
     font-weight: 400;
 }
 
