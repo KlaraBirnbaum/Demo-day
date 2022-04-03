@@ -45,9 +45,9 @@ body {
 }
 
 .container {
-    max-width: 1440px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 1340px;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin: 0 auto;
 }
 
@@ -77,9 +77,15 @@ h3 {
     font-weight: 700;
     font-size: 37px;
     line-height: 1.5em;
-    letter-spacing: -0.46;
+    letter-spacing: -0.46px;
     color: $font-color-dark;
     max-width: 50%;
+}
+
+h6 {
+    font-size: 25px;
+    line-height: 1.2em;
+    color: #2F281E;
 }
 
 .btn {
@@ -90,6 +96,11 @@ h3 {
     border-radius: 32px;
     padding: 12px 34px;
     text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        background-color: #4343b2;
+    }
 }
 
 section {
@@ -113,7 +124,7 @@ section {
 }
 
 section.column {
-    margin-bottom: 123px;
+    padding-bottom: 123px;
 }
 .grid {
     display: grid;
@@ -123,6 +134,35 @@ section.column {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 74px;
 }
+
+.blue {
+    background-color: rgba(96, 114, 226, 0.13);
+}
+
+.pink {
+    background-color: rgba(152, 43, 190, 0.13);
+}
+
+.orange {
+    background-color: rgba(226, 98, 98, 0.13);
+}
+
+.green {
+   background-color: rgba(70, 194, 125, 0.13);
+}
+
+.grey {
+    background-color: rgba(67, 77, 144, 0.13);
+}
+
+.yellow {
+    background-color: rgba(231, 153, 65, 0.13);
+}
+
+a:hover {
+    color: #000;
+}
+
 // HEADER
 
 header {
@@ -194,10 +234,11 @@ header {
     .container {
         display: flex;
 
-        img {
-            width: 50%;
-        }
     }
+}
+
+.events img {
+    width: 50%;
 }
 
 .text {
@@ -211,9 +252,7 @@ header {
 
 .center {
     h3 {
-        margin: 0 auto;
-        margin-top: 170px;
-        margin-bottom: 60px;
+        margin: 170px auto 60px;
     }
 
    &>img {
@@ -229,5 +268,143 @@ header {
         &:last-child {
             margin-right: 0;
         }
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+                transition: ease-in-out 0.3s
+            }
+        }
     }
+}
+
+
+// MEMBERS
+
+.background .members {
+    flex-direction: column;
+    padding-bottom: 135px;
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $font-color-dark;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6em;
+    padding: 21px 20px 34px 22px;
+    border-radius: 11px;
+
+    strong {
+        display: block;
+        font-size: 20px;
+        line-height: 1em;
+        letter-spacing: 0.15px;
+        margin-bottom: 7px;
+    }
+}
+
+.member-name {
+    display: flex;
+    margin-top: 25px;
+
+    img {
+        border-radius: 50%;
+        margin-right: 22px;
+    }
+}
+
+// SECTION TIME
+
+.time {
+    padding-top: 64px;
+    padding-bottom: 106px;
+
+    p {
+        text-transform: uppercase;
+        size: 23px;
+        line-height: 1em;
+        letter-spacing: 2.1px;
+    }
+
+    h3 {
+        margin: 31px auto;
+    }
+
+    .pay-icons {
+        margin-top: 0;
+    }
+}
+
+// FOOTER
+
+footer {
+
+    h6 {
+        margin-bottom: 36px;
+    }
+
+    .container {
+
+        &>div {
+            border-top: 1px solid rgba(188, 208, 229, 0.5);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 54px;
+            padding-bottom: 98px;
+        }
+
+        div {
+            width: auto;
+        }
+    }
+
+    .footer-banner {
+        padding: 0 20px;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        color: $font-color-dark;
+        font-size: 18px;
+        line-height: 1.9em;
+        text-decoration: none;
+    }
+
+    .socials {
+        padding-left: 20px;
+
+        a {
+            position: relative;
+            padding-left: 30px;
+
+            &:before {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+.fb::before {
+    content: url('../img/facebook.svg');
+}
+
+.twitter::before {
+    content: url('../img/twitter.svg');
+}
+
+.insta::before {
+    content: url('../img/instagram.svg');
 }
